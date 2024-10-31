@@ -21,6 +21,5 @@ ngrok->https://ngrok.com/
 氣象資料開放平臺->https://opendata.cwa.gov.tw/index  
 新竹市政府資料開放平臺->https://opendata.hccg.gov.tw/Default.aspx  
 https://opendata.hccg.gov.tw/OpenDataDetail.aspx?n=1&s=59  
-https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=(API_Key)&format=JSON  
 
 ![image](https://github.com/miyachun/chu-web-program/blob/main/demo.png)
