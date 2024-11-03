@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Template</title>
+<style>
+
+
+table {
+      
+      float: left;
+    }
+td{
+  border: 1px solid black;
+  height: 30px;
+}
+</style>
+</head>
+<body>
+
+
+  {% for key, value in a.items() %}
+<table >
+        {% if key == 'name' %}
+        {% for namepost in value %}
+        <tr>
+          <td>{{ namepost}}</td> 
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'area' %}  
+        {% for areapost in value %}
+        <tr>
+          <td>{{ areapost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'addr' %}  
+        {% for addrpost in value %}
+        <tr>
+          <td>{{addrpost}} </td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'time' %}  
+        {% for timepost in value %}
+        <tr>
+          <td>{{timepost}} </td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+         </table>
+
+   {% endfor %}      
+
+
+
+</body>
+</html>

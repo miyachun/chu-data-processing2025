@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block content %}
+     <div class="container">
+            <h1>{% block title %} -新竹市加油(氣)站- {% endblock %}</h1>          
+            <form method="POST" action="">
+
+                <select name="colour" method="GET" action="/">
+                    <option  selected></option>       
+                    <option value="東區">東區</option>
+                    <option value="香山區">香山區</option>
+                    <option value="北區">北區</option>                          
+                      </select>           
+            
+                      <input type="submit" value ="Submit">     
+                   
+                   
+                    </form>
+            
+                    <hr> 
+                    {% if c=='0' %}     
+                    {% for key, value in b.items() %}
+                    <table >
+                            {% if key == 'name' %}
+                            {% for namepost in value %}
+                            <tr>
+                              <td>{{ namepost}}</td> 
+                            </tr>
+                            {% endfor %}
+                            {% endif %}
+                    
+                            {% if key == 'area' %}  
+                            {% for areapost in value %}
+                            <tr>
+                              <td>{{ areapost}}</td>  
+                            </tr>
+                            {% endfor %}
+                            {% endif %}
+                    
+                            {% if key == 'addr' %}  
+                            {% for addrpost in value %}
+                            <tr>
+                              <td>{{addrpost}} </td>  
+                            </tr>
+                            {% endfor %}
+                            {% endif %}
+                    
+                            {% if key == 'time' %}  
+                            {% for timepost in value %}
+                            <tr>
+                              <td>{{timepost}} </td>  
+                            </tr>
+                            {% endfor %}
+                            {% endif %}
+                             </table>
+                    
+                       {% endfor %}        
+                    
+                      {% endif %}
+              
+              
+                
+             
+            {% if c=='1' %} 
+            {% for key, value in a.items() %}
+            <table >
+                    {% if key == 'name' %}
+                    {% for namepost in value %}
+                    <tr>
+                      <td>{{ namepost}}</td> 
+                    </tr>
+                    {% endfor %}
+                    {% endif %}
+            
+                    {% if key == 'area' %}  
+                    {% for areapost in value %}
+                    <tr>
+                      <td>{{ areapost}}</td>  
+                    </tr>
+                    {% endfor %}
+                    {% endif %}
+            
+                    {% if key == 'addr' %}  
+                    {% for addrpost in value %}
+                    <tr>
+                      <td>{{addrpost}} </td>  
+                    </tr>
+                    {% endfor %}
+                    {% endif %}
+            
+                    {% if key == 'time' %}  
+                    {% for timepost in value %}
+                    <tr>
+                      <td>{{timepost}} </td>  
+                    </tr>
+                    {% endfor %}
+                    {% endif %}
+                     </table>
+            
+               {% endfor %}     
+            
+                     {% endif %}
+      
+
+
+            </div>
+{% endblock %}
