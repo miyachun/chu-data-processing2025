@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Template</title>
+<style>
+
+
+table {
+      
+      float: left;
+    }
+td{
+  border: 1px solid black;
+  height: 30px;
+}
+</style>
+</head>
+<body>
+
+
+  {% for key, value in a.items() %}
+<table >
+        {% if key == 'StationNo' %}
+        {% for citypost in value %}
+        <tr>
+          <td>{{ citypost}}</td> 
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'Time' %}  
+        {% for strTpost in value %}
+        <tr>
+          <td>{{ strTpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'WaterLevel' %}  
+        {% for endTpost in value %}
+        <tr>
+          <td>{{ endTpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+         </table>
+
+   {% endfor %}      
+
+
+
+</body>
+</html>
