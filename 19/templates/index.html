@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+
+    <form method="POST" action="">
+
+        <select name="colour" method="GET" action="/">
+            <option  selected></option>       
+            <option value="竹北分局">竹北分局</option>
+            <option value="竹東分局">竹東分局</option>
+            <option value="新埔分局">新埔分局</option>
+            <option value="新湖分局">新湖分局</option> 
+            <option value="橫山分局">橫山分局</option>       
+              </select>           
+    
+              <input type="submit" value ="Submit">     
+           
+           
+            </form>
+    
+            <hr> 
+
+    {% for key, value in b.items() %}
+    <table >
+            {% if key == 'Tarea' %}
+            {% for Tareapost in value %}
+            <tr>
+              <td>{{ Tareapost}}</td> 
+            </tr>
+            {% endfor %}
+            {% endif %}
+    
+            {% if key == 'Taddr' %}  
+            {% for Taddrpost in value %}
+            <tr>
+              <td>{{ Taddrpost}}</td>  
+            </tr>
+            {% endfor %}
+            {% endif %}
+    
+            {% if key == 'Ttype' %}  
+            {% for Ttypepost in value %}
+            <tr>
+              <td>{{Ttypepost}}</td>  
+            </tr>
+            {% endfor %}
+            {% endif %}
+    
+            {% if key == 'Tspeed' %}  
+            {% for Tspeedpost in value %}
+            <tr>
+              <td>{{ Tspeedpost}}</td>  
+            </tr>
+            {% endfor %}
+            {% endif %}
+    
+    
+             </table>
+    
+       {% endfor %}      
+    
+   
+  {% if c=='1' %} 
+  
+    {% for key, value in a.items() %}
+  <table >
+          {% if key == 'Tarea' %}
+          {% for Tareapost in value %}
+          <tr>
+            <td>{{ Tareapost}}</td> 
+          </tr>
+          {% endfor %}
+          {% endif %}
+  
+          {% if key == 'Taddr' %}  
+          {% for Taddrpost in value %}
+          <tr>
+            <td>{{ Taddrpost}}</td>  
+          </tr>
+          {% endfor %}
+          {% endif %}
+  
+          {% if key == 'Ttype' %}  
+          {% for Ttypepost in value %}
+          <tr>
+            <td>{{Ttypepost}}</td>  
+          </tr>
+          {% endfor %}
+          {% endif %}
+  
+          {% if key == 'Tspeed' %}  
+          {% for Tspeedpost in value %}
+          <tr>
+            <td>{{ Tspeedpost}}</td>  
+          </tr>
+          {% endfor %}
+          {% endif %}
+  
+  
+           </table>
+  
+     {% endfor %}      
+  
+     {% endif %}
+  </div>   
+
+  {% endblock %}
+
+
+

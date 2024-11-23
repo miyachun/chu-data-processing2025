@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+
+  {% for key, value in a.items() %}
+<table>
+        {% if key == 'Tarea' %}  
+        {% for Tareapost in value %}
+        <tr>
+          <td>{{ Tareapost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+
+        {% if key == 'Tspeed' %}  
+        {% for Tspeedpost in value %}
+        <tr>
+          <td>{{ Tspeedpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        {% if key == 'lon' %}  
+        {% for lonpost in value %}
+        <tr>
+          <td>{{lonpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+
+        {% if key == 'lat' %}  
+        {% for latpost in value %}
+        <tr>
+          <td>{{ latpost}}</td>  
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+         </table>
+
+         {% endfor %}  
+</div>
+
+{% endblock %}
