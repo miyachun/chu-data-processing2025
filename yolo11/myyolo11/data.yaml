@@ -1,0 +1,13 @@
+train: Bee Hive Vision.v4i.yolov11/train/images
+val: Bee Hive Vision.v4i.yolov11/valid/images
+test: Bee Hive Vision.v4i.yolov11/test/images
+
+nc: 2
+names: ['Bee', 'Varroa mite']
+
+roboflow:
+  workspace: simulatedbees
+  project: bee-hive-vision
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/simulatedbees/bee-hive-vision/dataset/4
