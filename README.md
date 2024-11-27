@@ -1,3 +1,5 @@
+print('中華abc123')
+
 python --version
 
 -虛擬環境安裝-  
