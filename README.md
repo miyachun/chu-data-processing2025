@@ -1,7 +1,3 @@
-print('中華abc123')
-
-python --version
-
 -虛擬環境安裝-  
 
 1->環境變數  
