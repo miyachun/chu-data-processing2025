@@ -16,6 +16,9 @@ virtualenv 取一個名稱
 activate  
 
 4->軟體vsc (Visual Studio Code)  
+5->測試 python 01.py  
+
+
 -相關-  
 virtualenv->virtualenv -p python3.10 XXX  
 flask->https://flask.palletsprojects.com/en/3.0.x/  
