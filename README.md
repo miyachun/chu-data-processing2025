@@ -16,7 +16,7 @@ virtualenv 取一個名稱
 activate  
 
 4->軟體vsc (Visual Studio Code)  
-5->測試 python 01.py  
+5->測試 python XX.py  
 
 
 -相關-  
