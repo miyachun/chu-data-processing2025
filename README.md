@@ -1,8 +1,8 @@
 -虛擬環境安裝-  
 
 1->環境變數  
-C:\Users\L107\AppData\Local\Programs\Python\Python312\Scripts  
-C:\Users\L107\AppData\Local\Programs\Python\Python312  
+C:\Users\C2\AppData\Local\Programs\Python\Python312\Scripts  
+C:\Users\C2\AppData\Local\Programs\Python\Python312  
  
 2->安裝virtualenv  
 pip install virtualenv  
