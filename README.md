@@ -8,7 +8,7 @@ C:\Users\C2\AppData\Local\Programs\Python\Python312
 2->安裝virtualenv  
 pip install virtualenv  
 
-cd 路徑(C:\Users\C2\Documents\XXXXX)  
+移動->cd 路徑(C:\Users\C2\Documents\XXXXX)  
 virtualenv 取一個名稱  
   
 3->啟動  
