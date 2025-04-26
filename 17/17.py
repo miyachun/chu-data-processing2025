@@ -1,14 +1,11 @@
 #https://fhy.wra.gov.tw/WraApi
 #url='https://fhy.wra.gov.tw/WraApi/v1/Water/Station?$top=30'
-
+import xml.etree.ElementTree as ET
+import requests
 
 #import xmlschema
-url = "https://fhy.wra.gov.tw/WraApi/v1/Water/Station?$top=30"
+#url = "https://fhy.wra.gov.tw/WraApi/v1/Water/Station?$top=30"
 #my_schema = xmlschema.XMLSchema('Station.xml')
-
-import xml.etree.ElementTree as ET
-
-import requests
 
 
 tree=ET.parse('Station.xml')
