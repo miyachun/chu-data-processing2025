@@ -13,10 +13,11 @@ myD01={'name':[],'area':[],'addr':[],'time':[]}
 def index():
     global myD
     global myD01 
-    url = 'https://odws.hccg.gov.tw/001/Upload/25/opendata/9059/68/9813f5cd-6686-4047-b6eb-609d163286f8.json?1130726160042'
-
-    data = urllib.request.urlopen(url).read()
-    output = json.loads(data)
+    #url = 'https://odws.hccg.gov.tw/001/Upload/25/opendata/9059/68/9813f5cd-6686-4047-b6eb-609d163286f8.json?1130726160042'
+    #data = urllib.request.urlopen(url).read()
+    #output = json.loads(data)
+    url = open('9813f5cd-6686-4047-b6eb-609d163286f8.json','r',encoding="utf-8")       
+    output = json.load(url) 
     if request.method == 'POST':
         
         myD01.clear()
