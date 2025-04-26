@@ -12,10 +12,11 @@ myD={'name':[],'area':[],'addr':[],'time':[]}
 @app.route('/')
 def index():
     
-    url = 'https://odws.hccg.gov.tw/001/Upload/25/opendata/9059/68/9813f5cd-6686-4047-b6eb-609d163286f8.json?1130726160042'
-
-    data = urllib.request.urlopen(url).read()
-    output = json.loads(data)
+    #url = 'https://odws.hccg.gov.tw/001/Upload/25/opendata/9059/68/9813f5cd-6686-4047-b6eb-609d163286f8.json?1130726160042'
+    #data = urllib.request.urlopen(url).read()
+    #output = json.loads(data)
+    url = open('9813f5cd-6686-4047-b6eb-609d163286f8.json','r',encoding="utf-8")       
+    output = json.load(url) 
    
     for i in output:
         #print(i)
