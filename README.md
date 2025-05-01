@@ -7,7 +7,7 @@
 1->環境變數  
 C:\Users\C2\AppData\Local\Programs\Python\Python312\Scripts  
 C:\Users\C2\AppData\Local\Programs\Python\Python312  
-
+  
 命令提示字元(CMD)  
 2->安裝virtualenv  
 pip install virtualenv  
