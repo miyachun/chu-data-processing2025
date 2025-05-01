@@ -1,5 +1,9 @@
 -虛擬環境安裝-  
 
+安裝->pip install XXXXXX  
+移動->cd 路徑(C:\Users\C2\Documents\XXXXXX)  
+執行->python XXXXXX.py  
+  
 1->環境變數  
 C:\Users\C2\AppData\Local\Programs\Python\Python312\Scripts  
 C:\Users\C2\AppData\Local\Programs\Python\Python312  
@@ -7,17 +11,11 @@ C:\Users\C2\AppData\Local\Programs\Python\Python312
 命令提示字元(CMD)  
 2->安裝virtualenv  
 pip install virtualenv  
-
-移動->cd 路徑(C:\Users\C2\Documents\XXXXX)  
 virtualenv 取一個名稱  
   
 3->啟動  
 到虛擬環境Scripts目錄中啟動  
 activate  
-
-4->軟體vsc (Visual Studio Code)  
-5->測試 python XX.py  
-
 
 -相關-  
 virtualenv->virtualenv -p python3.10 XXX  
