@@ -20,7 +20,6 @@ activate
 軟體(VSC)
 Visual Studio Code  
 
-
 -相關-  
 virtualenv->virtualenv -p python3.10 XXX  
 flask->https://flask.palletsprojects.com/en/3.0.x/  
