@@ -1,9 +1,5 @@
 -虛擬環境安裝-  
 
-安裝->pip install XXXXXX  
-移動->cd 路徑(C:\Users\C2\Documents\XXXXXX)  
-執行->python XXXXXX.py  
-  
 1->環境變數  
 C:\Users\C2\AppData\Local\Programs\Python\Python312\Scripts  
 C:\Users\C2\AppData\Local\Programs\Python\Python312  
@@ -16,9 +12,6 @@ virtualenv 取一個名稱
 3->啟動  
 到虛擬環境Scripts目錄中啟動  
 activate  
-
-軟體(VSC)
-Visual Studio Code  
 
 -相關-  
 virtualenv->virtualenv -p python3.10 XXX  
