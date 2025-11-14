@@ -1,4 +1,5 @@
-https://code.visualstudio.com/
+https://code.visualstudio.com/  
+python --version
 
 
 -虛擬環境安裝-  
