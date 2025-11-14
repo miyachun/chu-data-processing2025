@@ -1,8 +1,3 @@
-
-@app.route('/abc')  
-def abc():  
-    return 'XXXXXX'  
-  
 -虛擬環境安裝-  
 
 1->環境變數  
