@@ -1,9 +1,3 @@
-https://www.python.org/downloads/windows/  
-
-https://code.visualstudio.com/  
-
-
-
 -虛擬環境安裝-  
 
 1->環境變數  
