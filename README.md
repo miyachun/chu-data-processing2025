@@ -1,5 +1,4 @@
 -虛擬環境安裝-  
-
 1->環境變數  
 C:\Users\C5\AppData\Local\Programs\Python\Python312\Scripts  
 C:\Users\C5\AppData\Local\Programs\Python\Python312  
